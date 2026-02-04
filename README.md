@@ -25,8 +25,10 @@ A standalone RESTful application for managing favourite recipes, built with Fast
    ```
 2. **Start the application**
    ```bash
-   .venv\Scripts\Activate.ps1
-   uvicorn app.main:app --reload
+   python -m venv .venv # Create a virtual environment in Powershell
+   .venv/Scripts/Activate.ps1  # Activate virtual environment on Windows PowerShell
+   pip install -r requirements.txt # Install dependencies
+   uvicorn app.main:app --reload # Run the application
    ```
    The API will be available at http://127.0.0.1:8000
 3. **API Documentation**

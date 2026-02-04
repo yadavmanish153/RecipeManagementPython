@@ -88,11 +88,10 @@ Build a standalone, production‑ready Python REST API to manage favourite recip
 
 From the project root:
 
-```bash
-pip install -r requirements.txt
-.venv/Scripts/Activate.ps1  # on Windows PowerShell
-uvicorn app.main:app --reload
-```
+python -m venv .venv # Create a virtual environment in Powershell
+.venv/Scripts/Activate.ps1  # Activate virtual environment on Windows PowerShell
+pip install -r requirements.txt # Install dependencies
+uvicorn app.main:app --reload # Run the application
 
 - API base URL: `http://127.0.0.1:8000`
 - Interactive docs: `http://127.0.0.1:8000/docs`
